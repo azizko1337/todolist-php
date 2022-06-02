@@ -1,0 +1,162 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body, html{
+	font-family: roboto, arial, sans-serif;
+	font-size: 18px;
+}
+
+div#wrapper{
+	width:100%;
+	max-width:1024px;
+	min-height:100vh;
+	padding:calc(10vh + 10px) 10px 10px 10px;
+	margin:0 auto;
+	background-color:rgba(255, 255, 255, 0.6);
+
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:flex-start;
+}
+
+a{
+	height:10vh;
+	background-color:#121212;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	font-size: 1.5rem;
+	color:white;
+	text-decoration:none;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight:bold;
+}
+
+
+
+form{
+	width:100%;
+	max-width:400px;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	position:fixed;
+	right:-100%;
+	top:50%;
+	transform:translate(0, -50%);
+	transition:right .3s;
+	background-color:white;
+	padding:20px;
+	padding-top:30px;
+	border-left:3px solid #121212;
+	font-size: 1.3rem;
+}
+form.active{
+	right:0;
+}
+
+input[type="submit"]{
+	padding:10px;
+	cursor:pointer;
+	background:#fff;
+	outline:none;
+	border:3px solid #121212;
+	transition: background-color .2s;
+}
+input[type="submit"]:hover{
+	background:#121212;
+	color:#fff;
+}
+input{
+	font-size: 1.1rem;
+	border:1px solid #121212;
+	outline:none;
+}
+label{
+	padding:5px;
+}
+
+input{
+	font-size: 1.1rem;
+}
+
+h3{
+	font-size: 1.5rem;
+	font-weight:300;
+	padding:20px;
+}
+form>span{
+	padding-top:10px;
+	display:block;
+	width:100%;
+	text-align:center;
+}
+form>button{
+	padding:10px;
+	cursor:pointer;
+	background:#fff;
+	outline:none;
+	border:3px solid #121212;
+	transition: background-color .2s;
+	position:absolute;
+	bottom:3%;
+	left:50%;
+	transform:translateX(-50%);
+	font-size: 1.1rem;
+}
+form>button:hover{
+	background:#121212;
+	color:red;
+}
+
+
+
+
+#wrapper>button{
+	padding:10px;
+	background:white;
+	border:3px solid #121212;
+	color:#121212;
+	cursor:pointer;
+	transition:background-color .2s;
+	font-size: 1.2rem;
+	margin:20px 0;
+}
+#wrapper>button:hover{
+	background:#121212;
+	color:#fff;
+}
+
+h1{
+	width:100%;
+}
+span{
+	width:100%;
+}
+
+.task{
+	width:100%;
+	border-left:15px solid black;
+	height:15vh;
+	padding:10px;
+	transition: transform .2s;
+	cursor:pointer;
+	margin: 30px 0;
+}
+.task h3{
+	letter-spacing:1px;
+	text-transform:capitalize;
+	padding:0;
+	font-size: 2rem;
+}
+.task:hover{
+	transform:translateX(5%);
+	border-color:red;
+}
