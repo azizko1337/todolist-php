@@ -2,7 +2,7 @@
 
 ## Project have been created to pass the third class of technical school. Simple to-do list with login system.
 
-## Currently hosted on https://todolist-php.cytr.us
+## Currently hosted on https://todophp.azalupka.cc
 
 ### Half of the variables and files are named in Polish, because I didn't want to be accused of plagiarism by the teacher :(
 
